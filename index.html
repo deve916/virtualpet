@@ -1,38 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
+    <meta charset="utf-8">
+    <title>MyQuiz Game</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
     <script src="p5.play.js"></script>
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-database.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.0/firebase-database.js"></script>
+
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
-    apiKey: "AIzaSyDqVodVfkipkS1rjqUUU6nwqWbvovyojCM",
-    authDomain: "virtual-pet-e97bf.firebaseapp.com",
-    databaseURL: "https://virtual-pet-e97bf-default-rtdb.firebaseio.com",
-    projectId: "virtual-pet-e97bf",
-    storageBucket: "virtual-pet-e97bf.appspot.com",
-    messagingSenderId: "691376599126",
-    appId: "1:691376599126:web:5adc16f1e691c274810bf7"
+    apiKey: "AIzaSyA_lhgrtz8y5wG0_F19zrS4ExUV18AbOdU",
+    authDomain: "quizup-e8ddd.firebaseapp.com",
+    databaseURL: "https://quizup-e8ddd-default-rtdb.firebaseio.com",
+    projectId: "quizup-e8ddd",
+    storageBucket: "quizup-e8ddd.appspot.com",
+    messagingSenderId: "855816564192",
+    appId: "1:855816564192:web:8908d2d03c1aff72a80f85"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 </script>
-  
-    <script src="Food.js"></script>
 
+    <script src="Contestant.js"></script>
+    <script src="Question.js"></script>
+    <script src="Quiz.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <meta charset="utf-8">
-
   </head>
   <body>
-      <script src="sketch.js"></script>
-</body></html>
+    <script src="sketch.js"></script>
+  </body>
+</html>
